@@ -92,9 +92,10 @@ hidden ID, which would have changed upon new account creation.
 
 - Problem occured upon signup as user maya.chen
 - Investigation using:
-`Get-ADUser maya.chen -Properties Enabled, LockedOut, Department |
->>   Select-Object SamAccountName, Enabled, LockedOut, Department,
->>   DistinguishedName, SID`
+```
+Get-ADUser maya.chen -Properties Enabled, LockedOut, Department | Select-Object
+SamAccountName, Enabled, LockedOut, Department, DistinguishedName, SID
+```
 
 ![](assets/maya.chen-info)
 
